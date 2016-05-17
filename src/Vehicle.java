@@ -12,3 +12,4 @@ public class Vehicle {
     String model;
     int year;
 }
+
