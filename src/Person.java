@@ -6,7 +6,7 @@
  * Created by johncrooks on 5/16/16.
  */
 public class Person {
-    static int familySize = 10;
+    static final int familySize = 10;
     String name;
     int age;
     boolean isAlive;
@@ -16,6 +16,9 @@ public class Person {
         this.name = name;
         this.age = age;
         this.isAlive = isAlive;
+    }
+
+    public Person() {
     }
 
     public String getName(){
@@ -33,6 +36,7 @@ public class Person {
     public void setAge(int age){
         this.age = age;
     }
+
     public boolean getIsAlive(){
         return isAlive;
     }
@@ -40,6 +44,7 @@ public class Person {
     public void setAlive(boolean alive) {
         isAlive = alive;
     }
+
     public static boolean isValidName(String newName){
         return newName.contains(" ");
     }

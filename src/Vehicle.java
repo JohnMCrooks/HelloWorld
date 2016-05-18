@@ -47,6 +47,7 @@ public class Vehicle {
             this.make = newMake;;
         }
     }
+
     public String getModel() {
         return model;
     }
@@ -64,12 +65,9 @@ public class Vehicle {
     }
 
 // I've never had good luck with fords
-    public boolean isFord(String newMake){
-        if (newMake.equalsIgnoreCase("ford")){
-            return true;
-        }else {
-            return false;
-        }}
+    public static boolean isFord(String newMake){
+        return newMake.equalsIgnoreCase("ford");
     }
+}
 
 
