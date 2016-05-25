@@ -2,6 +2,8 @@
  * Copyright (c) 2016.
  */
 
+import java.util.Arrays;
+
 /**
  * Created by johncrooks on 5/16/16.
  */
@@ -26,9 +28,10 @@ public class Person {
     }
 
     public void setName(String newName){
-        if (isValidName(newName)){
+        //if (isValidName(newName)){
             this.name = newName;
-    }}
+//    }
+        }
     public int getAge(){
         return age;
     }
@@ -49,4 +52,13 @@ public class Person {
         return newName.contains(" ");
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", isAlive=" + isAlive +
+                ", family=" + Arrays.toString(family) +
+                '}';
+    }
 }
