@@ -33,9 +33,9 @@ public class Excercise04 {
         ArrayList<String> namesarr = new ArrayList<>(Arrays.asList(names));
         ArrayList<String> pair;
         while (namesarr.size() > 0) {
-            pair = new ArrayList<>((ArrayList<String>) namesarr.subList(0, 1));
+            pair = new ArrayList<>(namesarr.subList(0, 1));
             namesMap.put(pair.get(1),pair.get(2));
-            namesarr = new ArrayList<>((ArrayList<String>) namesarr.subList(2,namesarr.size()));
+            namesarr = new ArrayList<>( namesarr.subList(2,namesarr.size()));
         }
         System.out.println(namesMap);
     }
