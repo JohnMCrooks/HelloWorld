@@ -15,19 +15,19 @@ public class Excercise06 {
         int num = 73749326;
         // return it in reverse aka: 54321
         //Personal Technique below, not finished......
-//        String var = Integer.toString(num);
-//        char[] var1 = var.toCharArray();
-//        char[] var2 = var1.clone();
-//        int x = 0;
-//        int y = 4;
-//        while (x<=4){
-//           var2[x] = var1[y];
-//            x++;
-//            y--;
-//        }
-//        System.out.println(var2[0] + var2[1] + var2[2] + var2[3]+ var2[4]);
-
-        solveViaMath(num);
+        String var = Integer.toString(num);
+        char[] var1 = var.toCharArray();
+        char[] var2 = var1.clone();
+        int x = 0;
+        int y = var1.length-1;
+        while (x<=var1.length && y>=0){
+           var2[x] = var1[y];
+            x++;
+            y--;
+        }
+        String results=  String.valueOf(var2);
+        System.out.println(results);
+//        solveViaMath(num);
     }
 
     public static void viaLoop(int num) {
